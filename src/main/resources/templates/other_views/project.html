@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org"
+>
+<th:block th:include="~{_shared/head}"/>
+<body>
+<section class="sec">
+    <div class="test">
+        <nav>
+            <div class="bg">
+            </div>
+        </nav>
+
+        <form th:action="@{/project}" method="POST" modelAttribute="beeFarm">
+            <div class="container f-style" th:action="save">
+                <p class="mess-f">Регистриране на проект</p>
+                <div class="column">
+                    <div class="l-name">
+                        <label for="first_name">Име</label>
+                        <input id="first_name" type="text" name="first_name" size="50">
+<!--                        <div class="examp"><strong>Пример:</strong> 42.69751 23.32415</div>-->
+                    </div>
+                    <div class="l-name">
+                        <label for="middle_name">Презиме</label>
+                        <input id="middle_name" type="text" value="" name="middle_name">
+                    </div>
+                    <div class="l-name">
+                        <label for="last_name">Фамилия</label>
+                        <input id="last_name" type="text" value="" name="last_name">
+                    </div>
+                    <div class="l-name">
+                        <label for="bee_farm_name">Име на пчелин</label>
+                        <input id="bee_farm_name" type="text" value="" name="bee_farm_name">
+                    </div>
+                    <div class="l-name">
+                        <label for="bees_number">Брой пчелни семейства</label>
+                        <input id="bees_number" type="text" value="" name="bees_number">
+                    </div>
+                </div>
+                <div class="column-one">
+                    <div class="l-name">
+                        <label for="country">Държава</label>
+                        <input id="country" type="text" value="" name="country">
+                    </div>
+                    <div class="add-w">
+                        <label for="address">Локация</label>
+                        <input id="address" type="text" value="" name="address">
+                    </div>
+                    <div class="l-name">
+                        <label for="proj_type">Тип проект</label>
+                        <input id="proj_type" type="text" value="" name="proj_type">
+                    </div>
+                    <div class="l-name">
+                        <label for="add_inf">Допълнителна информация</label>
+                        <input id="add_inf" type="text" value="" name="add_inf">
+                    </div>
+                </div>
+            </div>
+            <!-- Steps form -->
+<!--            <div class="pro-b">-->
+<!--                <div class="card">-->
+<!--                    &lt;!&ndash;                <div class="card-body mb-4">&ndash;&gt;-->
+
+<!--                    <div class="card-body">-->
+<!--                        &lt;!&ndash;                        <hr class="my-3">&ndash;&gt;-->
+<!--                        &lt;!&ndash; Stepper &ndash;&gt;-->
+<!--                        <div class="steps-form">-->
+<!--                            <div class="steps-row setup-panel">-->
+<!--                                <div class="steps-step">-->
+<!--                                    <a href="#step-9" type="button" class="btn btn-indigo btn-circle">1</a>-->
+<!--                                    <p>Име</p>-->
+<!--                                </div>-->
+<!--                                <div class="steps-step">-->
+<!--                                    <a href="#step-10" type="button" class="btn btn-default btn-circle"-->
+<!--                                       disabled="disabled">2</a>-->
+<!--                                    <p>Презиме</p>-->
+<!--                                </div>-->
+<!--                                <div class="steps-step">-->
+<!--                                    <a href="#step-11" type="button" class="btn btn-default btn-circle"-->
+<!--                                       disabled="disabled">3</a>-->
+<!--                                    <p>Фамилия</p>-->
+<!--                                </div>-->
+<!--                                <div class="steps-step">-->
+<!--                                    <a href="#step-12" type="button" class="btn btn-default btn-circle"-->
+<!--                                       disabled="disabled">4</a>-->
+<!--                                    <p>Име на пчелин</p>-->
+<!--                                </div>-->
+<!--                                <div class="steps-step">-->
+<!--                                    <a href="#step-13" type="button" class="btn btn-default btn-circle"-->
+<!--                                       disabled="disabled">5</a>-->
+<!--                                    <p>Брой семейства</p>-->
+<!--                                </div>-->
+<!--                                <div class="steps-step">-->
+<!--                                    <a href="#step-14" type="button" class="btn btn-default btn-circle"-->
+<!--                                       disabled="disabled">6</a>-->
+<!--                                    <p>Държава</p>-->
+<!--                                </div>-->
+<!--                                <div class="steps-step">-->
+<!--                                    <a href="#step-15" type="button" class="btn btn-default btn-circle"-->
+<!--                                       disabled="disabled">7</a>-->
+<!--                                    <p>Локация</p>-->
+<!--                                </div>-->
+<!--                                <div class="steps-step">-->
+<!--                                    <a href="#step-16" type="button" class="btn btn-default btn-circle"-->
+<!--                                       disabled="disabled">8</a>-->
+<!--                                    <p>Тип проект</p>-->
+<!--                                </div>-->
+<!--                                <div class="steps-step">-->
+<!--                                    <a href="#step-16" type="button" class="btn btn-default btn-circle"-->
+<!--                                       disabled="disabled">8</a>-->
+<!--                                    <p>Допълнителна информация</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+            <div>
+                <input class="sub-f" type="submit" value="Изпрати">
+            </div>
+        </form>
+        <!--        <div class="progress">-->
+        <!--            <div id="dynamic" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"-->
+        <!--                 aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">-->
+        <!--                <span id="current-progress"></span>-->
+        <!--            </div>-->
+        <!--        </div>-->
+    </div>
+</section>
+</body>
+</html>

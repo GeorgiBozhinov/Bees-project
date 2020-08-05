@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org"
+>
+<th:block th:include="~{_shared/head}"/>
+<body>
+<header>
+    <header>
+        <nav class="navbar navbar-expand-lg nav-col">
+            <a class="navbar-brand colour" href="/">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+            <ul class="navbar-nav row">
+                <li class="nav-item mr-2">
+                    <a class="nav-link text-white active h5" th:href="/families/dead_bees">Register dead hive</a>
+                </li>
+
+                <li class="nav-item mr-2">
+                    <a class="nav-link text-white active h5" th:href="/families/stolen_family">Register stolen hive</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link text-white active h5" th:href="/logout">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+</header>
+<main>
+    <!--    <div class="text-center mb-3">-->
+    <!--        <h4 class="text-white mt-2">Welcome to the arena, Predator</h4>-->
+    <!--    </div>-->
+    <!--    <hr class="my-3"/>-->
+    <!--    <div class="container">-->
+    <!--        <div class="text-center">-->
+    <!--            <h2>User, you don't have a hero. Click below and create one.</h2>-->
+    <!--            <a th:href="/heroes/create" class="btn btn-secondary">Create hero</a>-->
+    <!--        </div>-->
+
+    <!--    </div>-->
+</main>
+<th:block th:include="~{_shared/footer}"/>
+</body>
+</html>

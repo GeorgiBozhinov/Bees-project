@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org"
+>
+<th:block th:include="~{_shared/head}"/>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg nav-col">
+        <a class="navbar-brand colour" href="/">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+</header>
+<main>
+    <div class="container d-p-style">
+        <!--        action="/action_page.php" method="post"-->
+        <div class="column">
+            <label for="bee_farm_name" class="btn-gr">Име на пчелин:</label>
+            <input type="text" id="bee_farm_name" name="bee_farm_name" class="but-style"><br>
+
+            <label for="year_of_cre">Дата:</label>
+            <input type="text" id="year_of_cre" name="year_of_cre"><br>
+
+            <label for="bee_spec">Вид пчелни семейства:</label>
+            <select id="bee_spec">
+                <option value="andrenidea">ANDRENIDEA</option>
+                <option value="apidea">APIDAE</option>
+                <option value="colletidae">COLLETIDAE</option>
+                <option value="halicidate">HALICTIDATE</option>
+                <option value="megachilidae">MEGACHILIDAE</option>
+                <option value="militidae">MELITTIDAE</option>
+                <option value="stenotritidae">STENOTRITIDAE</option>
+            </select><br>
+
+            <label for="beekeeper_kind">Тип пчелар:</label>
+            <select id="beekeeper_kind">
+                <option value="hobby">Hobby</option>
+                <option value="hobby/career">Hobby/Career</option>
+                <option value="sideline">Sideline</option>
+                <option value="commercial">Commercial</option>
+            </select><br>
+
+            <label for="bees_nums" class="btn-gr">Брой пчелни семейства:</label>
+            <input type="text" id="bees_nums" name="bees_nums"><br>
+        </div>
+        <div class="column">
+            <label for="country">Държава:</label>
+            <input type="text" id="country"><br>
+
+            <!--GPS cordinates-->
+            <label for="address">Локация:</label>
+            <input type="text" id="address"><br>
+
+            <label for="reas_for_dead">Причина за смъртта:</label>
+            <input type="text" id="reas_for_dead"><br>
+
+            <label for="lab_name">Име на лаборатория:</label>
+            <input type="text" id="lab_name"><br>
+
+            <label for="add_info">Допълнителна информация:</label>
+            <input type="text" id="add_info"><br>
+        </div>
+        <input class="sub-d" type="submit" value="Submit">
+    </div>
+</main>
+<th:block th:include="~{_shared/footer}"/>
+</body>
+</html>

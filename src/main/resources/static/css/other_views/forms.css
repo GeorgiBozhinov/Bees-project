@@ -1,0 +1,248 @@
+.f-style {
+    position: absolute;
+    margin-left: 33%;
+    margin-top: 40px;
+    width: 60%;
+    height: 65%;
+    background-color: white;
+    /*border: 1px solid;*/
+    /*box-shadow: 5px 5px 5px 5px #888888;*/
+}
+
+.tt:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.d-p-style {
+    border: solid grey;
+    border-radius: 10px;
+    margin-top: 50px;
+    height: 60vh;
+}
+
+.but-style {
+    border: black;
+}
+
+.sub-but {
+    font-size: 25px;
+    width: 120px;
+    height: 50px;
+    padding: 2px;
+    cursor: pointer;
+    background-color: powderblue;
+    margin-bottom: 10px;
+}
+
+/*.sub-but:hover {*/
+/*    background-color: powderblue;*/
+/*}*/
+
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.form-inline label {
+    margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.form-inline button {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+}
+
+.form-inline button:hover {
+    background-color: royalblue;
+}
+
+@media (max-width: 800px) {
+    .form-inline input {
+        margin: 10px 0;
+    }
+
+    .form-inline {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+input[type=text], select {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 350px;
+}
+
+.sub-f {
+    border: 1px solid grey;
+    width: 15%;
+    background-color: white;
+    color: black;
+    margin-left: 80%;
+    border-radius: 10px;
+    cursor: pointer;
+    bottom: 8%;
+    position: absolute;
+    font-size: 20px;
+}
+
+.sub-d {
+    width: 15%;
+    background-color: powderblue;
+    color: black;
+    font-size: 20px;
+    padding: 14px 14px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left: 45%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sub-p {
+    width: 15%;
+    background-color: powderblue;
+    color: black;
+    font-size: 20px;
+    padding: 14px 14px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left: 45%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sub-f:hover .sub-d:hover .sub-p:hover {
+    background-color: powderblue;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding-left: 5px;
+    /*height: 300px; !* Should be removed. Only for demonstration *!*/
+}
+
+.column-one {
+    float: left;
+    width: 30%;
+    padding-left: 5px;
+    margin-left: 250px;
+    /*height: 300px; !* Should be removed. Only for demonstration *!*/
+}
+
+/*Sets width of the input field*/
+.f-w {
+    width: 1500px;
+}
+
+/*This function sets space between the most right button and the one beffor it*/
+.sp-bet-buts {
+    margin-left: 2px;
+}
+
+/*Below functions are responsible for dropdown button in the navbar*/
+.dropbtn {
+    color: white;
+    /*font-size: 20px;*/
+    cursor: pointer;
+}
+
+.dropdown {
+    margin-right: 200px;
+    border: white;
+    /*border-radius: 8px;*/
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    background: #234465;
+    margin-top: 15px;
+    left: 50% !important;
+    right: auto !important;
+    text-align: center !important;
+    transform: translate(-50%, 0) !important;
+    width: 300px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 5px 5px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.bg {
+    background-image: url("/img/test2.jpg");
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 30%;
+    position: absolute;
+}
+
+.prog-bar {
+    margin-top: 500px;
+}
+
+.examp {
+    margin-top: 10px;
+}
+
+.mess-f {
+    margin-top: 5px;
+    font-size: 23px;
+    font-style: italic;
+    text-align: center;
+}
+
+.progress {
+    /*margin: 10px;*/
+    width: 700px;
+    bottom: 10%;
+    position: absolute;
+    margin-left: 40%;
+}
+
+.sec {
+    padding: 20px 20px 30px 60px;
+}
+
+div.test {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    box-shadow: 5px 5px 5px 5px #888888;
+    width: 90%;
+    height: 95%;
+    position: absolute;
+}
+
+.add-w{
+    float: left;
+    margin-right: 20px;
+    margin-top: 52px;
+}
+
+
