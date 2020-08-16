@@ -1,0 +1,26 @@
+.box-info.lead-box {
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 60px;
+    height: 400px;
+    width: 300px;
+}
+
+.box-info {
+    margin-bottom: 25px;
+    border: 1px solid #CCC;
+}
+
+.box-head {
+    background: #F4F3EA;
+    color: #234465;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.box-body {
+    min-height: 288px;
+    background-color: #FFF;
+}
