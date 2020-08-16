@@ -1,18 +1,3 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <link rel="stylesheet" href="/css/map.css">-->
-<!--</head>-->
-<!--<body>-->
-<!--<div id="map-canvas"></div>-->
-<!--<script type="text/javascript"-->
-<!--        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuaWj8uMauHP3G0NIx2SNwfCUrRSWpMGk&sensor=false">-->
-<!--</script>-->
-
-<!--<script src="/js/map.js"></script>-->
-<!--</body>-->
-<!--</html>-->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,11 +15,11 @@
 
 
     </style>
-    <link rel="stylesheet" type="text/css" href="gdropdown.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/gdropdown.css"/>
     <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuaWj8uMauHP3G0NIx2SNwfCUrRSWpMGk&sensor=false">
     </script>
-    <script type="text/javascript" src="gdropdown.js"></script>
+    <script type="text/javascript" src="/js/gdropdown.js"></script>
     <script type="text/javascript">
 
         function initialize() {
@@ -42,7 +27,7 @@
             var mapDiv = document.getElementById('map');
             var myOptions = {
                 zoom: 12,
-                center: new google.maps.LatLng(42.698334, 23.319941),
+                center: new google.maps.LatLng(42.6999972, 23.3166654),
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
                 mapTypeControl: true,
                 mapTypeControlOptions: {
@@ -55,7 +40,7 @@
             var buttonOptions = {
                 gmap: map,
                 name: 'Sydney',
-                position: google.maps.ControlPosition.TOP_RIGHT,
+                position: google.maps.ControlPosition.RIGHT_TOP,
                 action: function () {
                     map.panTo(new google.maps.LatLng(41.749997,23.249999));
                 }
@@ -64,10 +49,10 @@
 
             var buttonOptions = {
                 gmap: map,
-                name: 'Home',
-                position: google.maps.ControlPosition.TOP_RIGHT,
+                name: 'Blagoevgrad',
+                position: google.maps.ControlPosition.RIGHT_TOP,
                 action: function () {
-                    map.panTo(new google.maps.LatLng(43.136957, -70.937392));
+                    map.panTo(new google.maps.LatLng(42.0166700, 23.1000000));
                 }
             }
             var button2 = new buttonControl(buttonOptions);
@@ -138,7 +123,7 @@
                 name: 'My Box',
                 id: 'ddControl',
                 title: 'A custom drop down select with mixed elements',
-                position: google.maps.ControlPosition.TOP_RIGHT,
+                position: google.maps.ControlPosition.RIGHT_TOP,
                 dropDown: dropDownDiv
             }
 
@@ -166,33 +151,6 @@
     </script>
 </head>
 <body>
-<!-- hard coded version...if needed/desired
-
-<div class="container">
-    <div class="dropDownControl" id="mddControl" title="A custom drop down select with mixed elements" onclick="(document.getElementById('mddOptsDiv').style.display == 'block') ? document.getElementById('mddOptsDiv').style.display = 'none' : document.getElementById('mddOptsDiv').style.display = 'block';"">
-        My Box
-        <img class="dropDownArrow" src="http://maps.gstatic.com/mapfiles/arrow-down.png">
-    </div>
-    <div class = "dropDownOptionsDiv" id="mddOptsDiv">
-        <div class = "dropDownItemDiv" id="mOpt"  title="This acts like a button or click event" onClick="alert('option1')">
-            Option 1
-        </div>
-        <div class = "dropDownItemDiv" id="sOpt" title="This acts like a button or click event" onClick="alert('option2')">
-            Option 2
-        </div>
-        <div class="separatorDiv"></div>
-        <div class="checkboxContainer" title="This allows for multiple selection/toggling on/off" onclick="(document.getElementById('tCheck').style.display == 'block') ? document.getElementById('tCheck').style.display = 'none' : document.getElementById('tCheck').style.display = 'block';">
-            <span role="checkbox" class="checkboxSpan ">
-                <div class="blankDiv" id="tCheck">
-                    <img class="blankImg" src="http://maps.gstatic.com/mapfiles/mv/imgs8.png" />
-                </div>
-            </span>
-            <label class="checkboxLabel">On/Off</label>
-        </div>
-        <div style="margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(235, 235, 235); display: none; "></div>
-    </div>
-</div>
- -->
 <div id="map"></div>
 </body>
 </html>

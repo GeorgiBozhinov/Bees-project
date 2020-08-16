@@ -2,17 +2,18 @@
  Classes to set up the drop-down control
  ************/
 
-function optionDiv(options){
+function optionDiv(options) {
     var control = document.createElement('DIV');
     control.className = "dropDownItemDiv";
     control.title = options.title;
     control.id = options.id;
     control.innerHTML = options.name;
-    google.maps.event.addDomListener(control,'click',options.action);
+    google.maps.event.addDomListener(control, 'click', options.action);
     return control;
 }
 
-function checkBox(options){
+
+function checkBox(options) {
     //first make the outer container
     var container = document.createElement('DIV');
     container.className = "checkboxContainer";
@@ -39,26 +40,29 @@ function checkBox(options){
     container.appendChild(span);
     container.appendChild(label);
 
-    google.maps.event.addDomListener(container,'click',function(){
+    google.maps.event.addDomListener(container, 'click', function () {
         (document.getElementById(bDiv.id).style.display == 'block') ? document.getElementById(bDiv.id).style.display = 'none' : document.getElementById(bDiv.id).style.display = 'block';
         options.action();
     })
     return container;
 }
-function separator(){
+
+
+function separator() {
     var sep = document.createElement('DIV');
     sep.className = "separatorDiv";
     return sep;
 }
 
-function dropDownOptionsDiv(options){
+
+function dropDownOptionsDiv(options) {
     //alert(options.items[1]);
     var container = document.createElement('DIV');
     container.className = "dropDownOptionsDiv";
     container.id = options.id;
 
 
-    for(i=0; i<options.items.length; i++){
+    for (i = 0; i < options.items.length; i++) {
         //alert(options.items[i]);
         container.appendChild(options.items[i]);
     }
@@ -70,7 +74,8 @@ function dropDownOptionsDiv(options){
     return container;
 }
 
-function dropDownControl(options){
+
+function dropDownControl(options) {
     var container = document.createElement('DIV');
     container.className = 'container';
 
@@ -86,13 +91,14 @@ function dropDownControl(options){
     container.appendChild(options.dropDown);
 
     options.gmap.controls[options.position].push(container);
-    google.maps.event.addDomListener(container,'click',function(){
+    google.maps.event.addDomListener(container, 'click', function () {
         (document.getElementById('myddOptsDiv').style.display == 'block') ? document.getElementById('myddOptsDiv').style.display = 'none' : document.getElementById('myddOptsDiv').style.display = 'block';
-        setTimeout( function(){
+        setTimeout(function () {
             document.getElementById('myddOptsDiv').style.display = 'none';
         }, 1500);
     })
 }
+
 
 function buttonControl(options) {
     var control = document.createElement('DIV');
