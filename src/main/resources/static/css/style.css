@@ -14,15 +14,6 @@
     text-align: center;
 }
 
-/*Duplicated*/
-/*body {*/
-/*    background-image: url('../img/99313.jpg');*/
-/*    background-color: white;*/
-/*    background-position: center;*/
-/*    background-attachment: fixed;*/
-/*    background-size: cover;*/
-/*}*/
-
 textarea {
     resize: none;
 }
@@ -84,18 +75,6 @@ footer {
     margin-top: 10px;
 }
 
-/* Style the search box inside the navigation bar */
-/*input[type=text], select {*/
-/*    !*float: right;*!*/
-/*    padding: 0px;*/
-/*    border: #818182;*/
-/*    border-radius: 10px;*/
-/*    !*margin-left: 15px;*!*/
-/*    margin-top: 1px;*/
-/*    margin-right: 36px;*/
-/*    font-size: 17px;*/
-/*}*/
-
 .cen {
     position: center;
 }
@@ -109,3 +88,12 @@ footer {
 ul {
     display: flex;
 }
+
+.align-left {
+    margin-left: 50px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    size: 5px;
+}
+
+

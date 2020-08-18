@@ -1,14 +1,27 @@
 .box-info.lead-box {
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-left: 60px;
-    height: 400px;
+    position: fixed;
+    /*border-radius: 10px;*/
+    /*margin-top: 20px;*/
+    /*margin-left: 60px;*/
+    height: 1000px;
     width: 300px;
+    background: aliceblue;
+}
+
+.box-info2 {
+    position: fixed;
+    /*border-radius: 10px;*/
+    /*margin-top: 20px;*/
+    /*margin-left: 60px;*/
+    height: 1000px;
+    width: 100px;
+    background: yellow;
+    border: 1px solid red;
 }
 
 .box-info {
-    margin-bottom: 25px;
-    border: 1px solid #CCC;
+    /*margin-bottom: 25px;*/
+    /*border: 1px solid palegreen;*/
 }
 
 .box-head {
