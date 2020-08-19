@@ -89,7 +89,7 @@ ul {
     display: flex;
 }
 
-.align-left {
+.al-left {
     margin-left: 25px;
     margin-top: 1px;
     margin-bottom: 1px;
@@ -97,6 +97,10 @@ ul {
     color: black;
     display: block;
     width: 300px;
+}
+
+a.x {
+    color: black;
 }
 
 

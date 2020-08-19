@@ -1,4 +1,4 @@
-.box-info.lead-box {
+.box-info {
     position: absolute;
     height: 100%;
     width: 20%;
@@ -16,14 +16,14 @@
     border: 1px solid red;
 }
 
-.box-head {
-    background: #F4F3EA;
-    color: #234465;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    text-align: center;
-    padding: 20px;
-}
+/*.box-head {*/
+/*    background: #F4F3EA;*/
+/*    color: #234465;*/
+/*    border-top-left-radius: 10px;*/
+/*    border-top-right-radius: 10px;*/
+/*    text-align: center;*/
+/*    padding: 20px;*/
+/*}*/
 
 .box-body {
     min-height: 288px;

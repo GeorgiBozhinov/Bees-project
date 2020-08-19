@@ -7,6 +7,11 @@
     border-bottom: 5px solid #D3AC2B;
 }
 
+.bot-border {
+    border-bottom: 5px solid #D3AC2B;
+    margin-bottom: 30px;
+}
+
 .nav-col1 {
     background: #565656;
 }
