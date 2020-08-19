@@ -1,9 +1,10 @@
 .nav-col {
-    /*//background: #234465;*/
-    /*//background: #D3AC2B;*/
-    /*//background: #DBC1AD ;*/
+    /*background: #234465;*/
+    /*background: #D3AC2B;*/
+    /*background: #DBC1AD ;*/
     /*background: #F3E8EB ;*/
-    background: #6C7A89  ;
+    /*background: #6C7A89 ;*/
+    border-bottom: 5px solid #D3AC2B;
 }
 
 .nav-col1 {
@@ -11,7 +12,7 @@
 }
 
 .colour {
-    color: white;
+    color: black;
 }
 
 .but-login {

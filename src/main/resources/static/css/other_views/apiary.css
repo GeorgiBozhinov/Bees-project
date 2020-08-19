@@ -1,11 +1,8 @@
 .box-info.lead-box {
-    position: fixed;
-    /*border-radius: 10px;*/
-    /*margin-top: 20px;*/
-    /*margin-left: 60px;*/
-    height: 1000px;
-    width: 300px;
-    background: aliceblue;
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    background: #C09247;
 }
 
 .box-info2 {
@@ -17,11 +14,6 @@
     width: 100px;
     background: yellow;
     border: 1px solid red;
-}
-
-.box-info {
-    /*margin-bottom: 25px;*/
-    /*border: 1px solid palegreen;*/
 }
 
 .box-head {
@@ -38,4 +30,4 @@
     background-color: #FFF;
 }
 
-/*Below code is used by /profile/show*/
+
