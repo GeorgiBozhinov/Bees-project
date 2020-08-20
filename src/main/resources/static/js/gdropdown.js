@@ -1,6 +1,7 @@
 /************
  Classes to set up the drop-down control
  ************/
+// The code is used by the map
 
 function optionDiv(options) {
     var control = document.createElement('DIV');

@@ -28,10 +28,6 @@
     margin-right: 5px;
 }
 
-a.ex1:hover, a.ex1:active {
-    font-size: 110%;
-}
-
 label {
     display: inline-block;
     flex-direction: row;
@@ -60,11 +56,6 @@ select {
     float: left;
 }
 
-/*.back-co {*/
-/*    !*background-color: #F6F5EF;*!*/
-/*    background-color: white;*/
-/*}*/
-
 .mess {
     margin-top: 40px;
 }
@@ -90,32 +81,6 @@ select {
     background-color: #2980B9;
 }
 
-/*.dropdown {*/
-/*    position: relative;*/
-/*    display: inline-block;*/
-/*}*/
-
-/*.dropdown-content {*/
-/*    display: none;*/
-/*    position: absolute;*/
-/*    background-color: #f1f1f1;*/
-/*    min-width: 160px;*/
-/*    overflow: auto;*/
-/*    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
-/*    z-index: 1;*/
-/*}*/
-
-/*.dropdown-content a {*/
-/*    color: black;*/
-/*    padding: 12px 16px;*/
-/*    text-decoration: none;*/
-/*    display: block;*/
-/*}*/
-
-/*.dropdown a:hover {*/
-/*    background-color: #ddd;*/
-/*}*/
-
 .show {
     display: block;
 }
@@ -129,11 +94,6 @@ select {
     color: #dddddd;
     text-decoration: underline;
 }
-
-/*Overloaf used in bee_farm.html page for some tests. Not in use anymore.*/
-/*.main-overf{*/
-/*    overflow-y: scroll;*/
-/*}*/
 
 footer {
     overflow: hidden;
@@ -190,5 +150,14 @@ footer {
     bottom: 15%;
     margin-left: 30%;
     width: 70%;
+    position: absolute;
+}
+
+.test-class {
+    border: 1px solid green;
+    background: antiquewhite;
+    height: 100%;
+    width: 80%;
+    margin-left: 20%;
     position: absolute;
 }
