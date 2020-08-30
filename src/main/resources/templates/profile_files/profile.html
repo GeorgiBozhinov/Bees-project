@@ -9,51 +9,55 @@
 <header>
 </header>
 <main>
-    <!--    <button class="x" onclick="openForm()">Обща информация</button>-->
     <div class="box-info">
         <div class="column">
             <div class="al-left">
-                <span class="x" onclick="openForm()">Обща информация</span>
+                <span class="x" onclick="openForm(0)">Обща информация</span>
             </div>
             <div class="al-left">
-                <span class="x" onclick="openForm()">Моите пчелини</span>
+                <span class="x" onclick="openForm(1)">Моите пчелини</span>
             </div>
             <div class="al-left">
-                <span class="x" onclick="openForm()">Моите теми (публикации)</span>
+                <span class="x" onclick="openForm(2)">Моите теми (публикации)</span>
             </div>
             <div class="al-left">
-                <span class="x" onclick="openForm()">Моите коментари</span>
+                <span class="x" onclick="openForm(3)">Моите коментари</span>
             </div>
             <div class="al-left">
-                <span class="x" onclick="openForm()">Настройки</span>
+                <span class="x" onclick="openForm(4)">Настройки</span>
             </div>
         </div>
     </div>
-<!--    <div class="test-class">-->
-<!--        <h6>Test bro</h6>-->
-<!--    </div>-->
-    <!--    <div class="box-info">-->
-    <!--        <div class="column">-->
-    <!--            <div class="al-left">-->
-    <!--&lt;!&ndash;                <a class="x" onclick="openForm()">Обща информация</a>&ndash;&gt;-->
-    <!--                <button class="x" onclick="openForm()">Обща информация</button>-->
-    <!--            </div>-->
-    <!--            <div class="al-left">-->
-    <!--                <a class="x" href="/">Моите пчелини</a>-->
-    <!--            </div>-->
-    <!--            <div class="al-left">-->
-    <!--                <a class="x" href="/">Моите теми (публикации)</a>-->
-    <!--            </div>-->
-    <!--            <div class="al-left">-->
-    <!--                <a class="x" href="/">Моите коментари</a>-->
-    <!--            </div>-->
-    <!--            <div class="al-left">-->
-    <!--                <a class="x" href="/profile/settings">Настройки</a>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
+<!--    Моите пчелини-->
+    <div class="test-class" id="bee-farm">
+        <form action="/action_page.php" class="form-container">
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+<!--    Моите теми (публикации)-->
+    <div class="test-class" id="my-publications">
+        <form action="/action_page.php" class="form-container">
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+<!--    Моите коментари-->
+    <div class="test-class" id="my-comment">
+        <form action="/action_page.php" class="form-container">
+                        <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+<!--    Настройки-->
+    <div class="test-class" id="settings">
+        <form action="/action_page.php" class="form-container">
+
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+<!--    Обща информация-->
     <div class="test-class" id="myForm">
-        <h6>TEst</h6>
         <form action="/action_page.php" class="form-container">
             <h1>Login</h1>
 
@@ -67,12 +71,11 @@
             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
         </form>
     </div>
-</main>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
-<script src="/static/js/main.js"></script>
+<script src="/js/main.js"></script>
 <script src="/js/pop-up.js"></script>
 </body>
 </html>

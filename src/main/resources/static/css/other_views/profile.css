@@ -52,7 +52,8 @@ span.x:hover, span.x:active {
 
 /* Add styles to the form container */
 .form-container {
-    max-width: 300px;
+    /*max-width: 300px;*/
+    height: 100%;
     padding: 10px;
     background-color: white;
 }
@@ -79,7 +80,7 @@ span.x:hover, span.x:active {
     padding: 16px 20px;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: auto;
     margin-bottom:10px;
     opacity: 0.8;
 }
