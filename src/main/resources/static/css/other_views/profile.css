@@ -2,7 +2,8 @@
     position: absolute;
     height: 100%;
     width: 20%;
-    background: #C09247;
+    background: #F0FFF0;
+    text-align: left;
 }
 
 .box-info2 {
@@ -25,6 +26,7 @@
 span.x:hover, span.x:active {
     font-size: 110%;
 }
+
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
     background-color: #555;
@@ -81,7 +83,7 @@ span.x:hover, span.x:active {
     border: none;
     cursor: pointer;
     width: auto;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     opacity: 0.8;
 }
 

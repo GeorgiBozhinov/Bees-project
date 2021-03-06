@@ -13,9 +13,8 @@
             display: none;
         }
 
-
     </style>
-    <link rel="stylesheet" type="text/css" href="/css/gdropdown.css"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/gdropdown.css}"/>
     <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuaWj8uMauHP3G0NIx2SNwfCUrRSWpMGk&sensor=false">
     </script>
@@ -39,10 +38,10 @@
             //set up custom buttons
             var buttonOptions = {
                 gmap: map,
-                name: 'Sydney',
+                name: 'Ilindenci',
                 position: google.maps.ControlPosition.RIGHT_TOP,
                 action: function () {
-                    map.panTo(new google.maps.LatLng(41.749997,23.249999));
+                    map.panTo(new google.maps.LatLng(41.749997, 23.249999));
                 }
             }
             var button1 = new buttonControl(buttonOptions);

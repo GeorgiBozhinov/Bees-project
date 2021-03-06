@@ -1,7 +1,5 @@
 package bees.joro.bees.data.models.base;
 
-import bees.joro.bees.data.models.base.BaseEntity;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
@@ -10,7 +8,7 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "stolen_families")
-public class StolenFamily extends BaseEntity{
+public class StolenFamily extends BaseEntity {
 
     private String firstName;
     private String middleName;
@@ -58,7 +56,7 @@ public class StolenFamily extends BaseEntity{
         this.lastName = lastName;
     }
 
-    @Column(name="farm_name")
+    @Column(name = "farm_name")
     public String getFarmName() {
         return farmName;
     }
@@ -67,7 +65,7 @@ public class StolenFamily extends BaseEntity{
         this.farmName = farmName;
     }
 
-    @Column(name="identification_number")
+    @Column(name = "identification_number")
     public String getIdentificationNumber() {
         return identificationNumber;
     }
@@ -76,7 +74,7 @@ public class StolenFamily extends BaseEntity{
         this.identificationNumber = identificationNumber;
     }
 
-    @Column(name="stolen_hives", nullable = false)
+    @Column(name = "stolen_hives", nullable = false)
     public Integer getStolenHives() {
         return stolenHives;
     }
@@ -85,7 +83,7 @@ public class StolenFamily extends BaseEntity{
         this.stolenHives = stolenHives;
     }
 
-    @Column(name="time_stamp")
+    @Column(name = "time_stamp")
     public String getTimeStampOfSteal() {
         return timeStampOfSteal;
     }
@@ -94,7 +92,7 @@ public class StolenFamily extends BaseEntity{
         this.timeStampOfSteal = timeStampOfSteal;
     }
 
-    @Column(name="hives_type", nullable = false)
+    @Column(name = "hives_type", nullable = false)
     public String getHivesType() {
         return hivesType;
     }
@@ -103,7 +101,7 @@ public class StolenFamily extends BaseEntity{
         this.hivesType = hivesType;
     }
 
-    @Column(name="additional_info")
+    @Column(name = "additional_info")
     public String getAdditionalInfo() {
         return additionalInfo;
     }

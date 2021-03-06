@@ -5,5 +5,5 @@ import bees.joro.bees.services.models.auth.RegisterUserServiceModel;
 public interface AuthService {
     void register(RegisterUserServiceModel model);
 
-    void login (RegisterUserServiceModel serviceModel);
+    void login(RegisterUserServiceModel serviceModel);
 }

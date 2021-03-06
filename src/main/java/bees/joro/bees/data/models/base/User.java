@@ -1,18 +1,19 @@
 package bees.joro.bees.data.models.base;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+
+import org.springframework.security.core.userdetails.UserDetails;
+
+import java.util.Set;
 
 
 @Entity
 @Table(name = "users")
-public class User extends BaseEntity {
+public class User extends BaseEntity implements UserDetails {
 
     private String username;
-    private String firstName;
-    private String lastName;
-    private String email;
+    private String password;
+    private Set<Role> authorities;
 
     public User() {
     }
@@ -26,30 +27,49 @@ public class User extends BaseEntity {
         this.username = username;
     }
 
-    @Column(name = "first_name")
-    public String getFirstName() {
-        return firstName;
+    @Column(name = "password")
+    public String getPassword() {
+        return password;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    @Column(name = "last_name")
-    public String getLastName() {
-        return lastName;
+    @Override
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinTable(name = "users_roles",
+            joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
+    public Set<Role> getAuthorities() {
+        return authorities;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setAuthorities(Set<Role> authorities) {
+        this.authorities = authorities;
     }
 
-    @Column(name = "email")
-    public String getEmail() {
-        return email;
+    @Override
+    @Transient
+    public boolean isAccountNonExpired() {
+        return true;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    @Override
+    @Transient
+    public boolean isAccountNonLocked() {
+        return true;
+    }
+
+    @Override
+    @Transient
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+    @Override
+    @Transient
+    public boolean isEnabled() {
+        return true;
     }
 }

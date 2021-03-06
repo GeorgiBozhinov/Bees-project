@@ -1,7 +1,7 @@
 package bees.joro.bees.services.services.implementations;
 
 import bees.joro.bees.data.models.base.User;
-import bees.joro.bees.data.models.repositories.UsersRepository;
+import bees.joro.bees.data.models.repositories.UserRepository;
 import bees.joro.bees.services.models.auth.RegisterUserServiceModel;
 import bees.joro.bees.services.services.AuthService;
 import bees.joro.bees.services.services.AuthValidationService;
@@ -10,12 +10,12 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class AuthServiceImpl implements AuthService {
-    private final UsersRepository usersRepository;
+    private final UserRepository usersRepository;
     private final ModelMapper mapper;
     private final AuthValidationService authValidationService;
 
     public AuthServiceImpl(AuthValidationService authValidationService,
-                           UsersRepository usersRepository,
+                           UserRepository usersRepository,
                            ModelMapper mapper) {
 
         this.authValidationService = authValidationService;

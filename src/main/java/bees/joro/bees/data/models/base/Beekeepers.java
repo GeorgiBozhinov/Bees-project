@@ -7,7 +7,7 @@ import javax.persistence.Table;
 import java.util.List;
 
 @Entity
-@Table(name="beekeepers")
+@Table(name = "beekeepers")
 public class Beekeepers extends BaseEntity {
 
     // Short description > GBozhinov > 18/02/2020
@@ -22,7 +22,7 @@ public class Beekeepers extends BaseEntity {
     public Beekeepers() {
     }
 
-    @Column(name="first_name", nullable=false)
+    @Column(name = "first_name", nullable = false)
     public String getFirstName() {
         return firstName;
     }
@@ -31,7 +31,7 @@ public class Beekeepers extends BaseEntity {
         this.firstName = firstName;
     }
 
-    @Column(name="middle_name", nullable = false)
+    @Column(name = "middle_name", nullable = false)
     public String getMiddleName() {
         return middleName;
     }
@@ -40,7 +40,7 @@ public class Beekeepers extends BaseEntity {
         this.middleName = middleName;
     }
 
-    @Column(name="last_name", nullable = false)
+    @Column(name = "last_name", nullable = false)
     public String getLastName() {
         return lastName;
     }

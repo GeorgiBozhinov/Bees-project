@@ -66,7 +66,7 @@ public class Project extends BaseEntity {
         this.beesNumber = beesNumber;
     }
 
-    @Column (name = "country")
+    @Column(name = "country")
     public String getCountry() {
         return country;
     }

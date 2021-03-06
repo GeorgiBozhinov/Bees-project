@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org"
+>
 <footer>
     <div class="footer py-2 nav bot-border">
     </div>
@@ -8,16 +14,16 @@
                     <a class="nav-link h6 text-warning">За Нас</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link h6 colour fot-pad" href="/news">За Нас</a>
+                    <a class="nav-link h6 colour fot-pad" th:href="@{/news}">За Нас</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link h6 colour fot-pad" href="/">Карта на сайта</a>
+                    <a class="nav-link h6 colour fot-pad" th:href="@{/}">Карта на сайта</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link h6 colour fot-pad" href="/show">Литература</a>
+                    <a class="nav-link h6 colour fot-pad" th:href="@{/show}">Литература</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link h6 colour fot-pad" href="/forum">Често задавани въпроси</a>
+                    <a class="nav-link h6 colour fot-pad" th:href="@{/forum}">Често задавани въпроси</a>
                 </li>
             </ul>
         </div>

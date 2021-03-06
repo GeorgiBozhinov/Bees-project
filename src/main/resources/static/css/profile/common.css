@@ -1,0 +1,85 @@
+.container-main {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*padding: 15px;*/
+    background: white;
+}
+
+/*Used in profile.html - common info for each user*/
+.container-profile {
+    width: 100%;
+    min-height: 35vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*padding: 15px;*/
+    background: white;
+    /*border-style: solid;*/
+    /*border-color: black;*/
+    border: solid;
+}
+
+/*User in profile.html - info for the bee farms*/
+.container-bees-farm {
+    width: 50%;
+    min-height: 65vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*padding: 15px;*/
+    background: yellow;
+    border: solid;
+}
+
+/*Used in profile.html - keep info for forum activity*/
+.container-forum {
+    width: 50%;
+    min-height: 65vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*padding: 15px;*/
+    background: red;
+    border: solid;
+}
+
+/*Set the CSS for the /profile, the window that display the user information*/
+.col-common {
+    /*float: left;*/
+    /*width: 30%;*/
+    /*padding-left: 5px;*/
+    margin-left: 15%;
+    /*height: 300px; !* Should be removed. Only for demonstration *!*/
+}
+
+.col-common2 {
+    /*float: left;*/
+    /*width: 30%;*/
+    /*padding-left: 5px;*/
+    margin-left: 15%;
+    margin-right: -25%;
+    /*height: 300px; !* Should be removed. Only for demonstration *!*/
+}

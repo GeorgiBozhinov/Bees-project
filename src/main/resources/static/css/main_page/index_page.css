@@ -161,3 +161,11 @@ footer {
     margin-left: 20%;
     position: absolute;
 }
+
+.ex1.a {
+    color: black;
+}
+
+.prof {
+    cursor: pointer;
+}

@@ -1,6 +1,12 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org"
+>
 <header>
     <div class="navbar navbar-expand-lg nav-col">
-        <a class="navbar-brand colour" href="/">Logo</a>
+        <a class="navbar-brand colour" th:href="@{/}">Logo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -8,27 +14,30 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="nav navbar-nav nav-right">
                 <li class="nav-item">
-                    <a class="nav-link h5 colour" href="/news">Новини</a>
+                    <a class="nav-link h5 colour" th:href="@{/news}">Новини</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link h5 colour" href="/forum">Форум</a>
+                    <a class="nav-link h5 colour" th:href="@{/forum}">Форум</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link h5 colour" href="/contact">Контакти</a>
+                    <a class="nav-link h5 colour" th:href="@{/contact}">Контакти</a>
                 </li>
-                <li class="nav-item colour">
-                    <div class="dropdown">
-                        <a onclick="myFunction()" class="nav-link h5 prof">Профил</a>
-                        <div id="myDropdown" class="dropdown-content dropdown-menu ">
-                            <a class="ex1" href="/map">Карта</a>
-                            <a class="ex1" href="/profile">Профил</a>
-                            <a class="ex1" href="/bee_farm">Регистриране на пчелин</a>
-                            <a class="ex1" href="/project">Регистриране на проект</a>
-                            <a class="ex1" href="/deadBees">Регистриране на мъртви семейства</a>
-                            <a class="ex1" href="/">Изход</a>
-                        </div>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link h5 colour" th:href="@{/login}">Вход</a>
                 </li>
+                <!--                <li class="nav-item colour">-->
+                <!--                    <div class="dropdown">-->
+                <!--                        <a onclick="myFunction()" class="nav-link h5 prof">Профил</a>-->
+                <!--                        <div id="myDropdown" class="dropdown-content dropdown-menu ">-->
+                <!--                            <a class="ex1" th:href="@{/map}">Карта</a>-->
+                <!--                            <a class="ex1" th:href="@{/profile}">Профил</a>-->
+                <!--                            <a class="ex1" th:href="@{/bee_farm}">Регистриране на пчелин</a>-->
+                <!--                            <a class="ex1" th:href="@{/project}">Регистриране на проект</a>-->
+                <!--                            <a class="ex1" th:href="@{/deadBees}">Регистриране на мъртви семейства</a>-->
+                <!--                            <a class="ex1" th:href="@{/}">Изход</a>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </li>-->
             </ul>
         </div>
     </div>

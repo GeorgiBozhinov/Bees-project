@@ -1,9 +1,16 @@
 .f-style {
+    /*position: absolute;*/
+    /*margin-left: 33%;*/
+    /*margin-top: 40px;*/
+    /*width: 60%;*/
+    /*height: 65%;*/
+    /*background-color: white;*/
+
     position: absolute;
     margin-left: 33%;
-    margin-top: 40px;
-    width: 60%;
-    height: 65%;
+    width: 100%;
+    min-width: 1000px;
+    height: auto;
     background-color: white;
 }
 
@@ -169,7 +176,7 @@ input[type=text], select {
 }
 
 .dropdown-content {
-    background: #234465;
+    background: #D3AC2B;
     margin-top: 15px;
     left: 50% !important;
     right: auto !important;
@@ -233,7 +240,7 @@ div.test {
     position: absolute;
 }
 
-.add-w{
+.add-w {
     float: left;
     margin-right: 20px;
     margin-top: 52px;

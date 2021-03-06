@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class DeadBeeController {
 
     @GetMapping("/deadBees")
-    public String getDeadBee(){
+    public String getDeadBee() {
         return "other_views/dead_bees.html";
     }
 }

@@ -30,13 +30,13 @@ public class ProjectController {
 //    }
 
     @GetMapping("/project")
-    public String getProject(){
+    public String getProject() {
         return "other_views/project.html";
     }
 
     @PostMapping("/project")
     public ModelAndView projectConfirm(@Valid @ModelAttribute("projectBindingModel")
-                                       ProjectBindingModel projectBindingModel,
+                                               ProjectBindingModel projectBindingModel,
                                        BindingResult bindingResult, ModelAndView modelAndView) {
 
         // There are 2 options.

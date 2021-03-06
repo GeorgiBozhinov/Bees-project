@@ -9,7 +9,7 @@
 <header>
     <header>
         <nav class="navbar navbar-expand-lg nav-col">
-            <a class="navbar-brand colour" href="/">Logo</a>
+            <a class="navbar-brand colour" th:href="@{/}">Logo</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -18,14 +18,15 @@
         <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
             <ul class="navbar-nav row">
                 <li class="nav-item mr-2">
-                    <a class="nav-link text-white active h5" th:href="/families/dead_bees">Register dead hive</a>
+                    <a class="nav-link text-white active h5" th:href="@{/families/dead_bees}">Register dead hive</a>
                 </li>
 
                 <li class="nav-item mr-2">
-                    <a class="nav-link text-white active h5" th:href="/families/stolen_family">Register stolen hive</a>
+                    <a class="nav-link text-white active h5" th:href="@{/families/stolen_family}">Register stolen
+                        hive</a>
                 </li>
                 <li class="nav-item mr-2">
-                    <a class="nav-link text-white active h5" th:href="/logout">Logout</a>
+                    <a class="nav-link text-white active h5" th:href="@{/logout}">Logout</a>
                 </li>
             </ul>
         </div>
